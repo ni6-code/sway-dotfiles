@@ -1,0 +1,32 @@
+#    __        ___ ___      
+#   / /____ __/ (_) _ \__ __
+#  /  '_/ // / / / // /\ \ /
+# /_/\_\\_, /_/_/\___//_\_\ 
+#      /___/                
+
+# ⚠⚠⚠ DESCRIPTION ⚠⚠⚠
+# This is not my color scheme, i try to copy it from the same name theme in btop
+
+[colors]
+background = 0a0a14
+foreground = d0d0e0
+#alpha      = 0.95
+cursor     = ff00cc ff00cc
+
+regular0 = 1e1e2e    # black
+regular1 = ff3c87    # red
+regular2 = 00f7ff    # green
+regular3 = ff61af    # yellow
+regular4 = 79e6f3    # blue
+regular5 = 9a86fd    # magenta
+regular6 = 3adef5    # cyan
+regular7 = d8d8d8    # white
+
+bright0 = 3a3a57    # bright black
+bright1 = ff5599    # bright red
+bright2 = 66fcff    # bright green
+bright3 = ff77bb    # bright yellow
+bright4 = 99eaff    # bright blue
+bright5 = b5a1ff    # bright magenta
+bright6 = 5ce4ff    # bright cyan
+bright7 = ffffff    # bright white

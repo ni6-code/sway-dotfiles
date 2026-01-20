@@ -1,0 +1,12 @@
+[colors]
+background=0a0a14ff
+text=ffffffff
+prompt=00f7ffff
+placeholder=ffffff2C
+input=666666ff
+match=79e6f3ff
+selection=66666680
+selection-text=ffffffff
+selection-match=ffffff9C
+counter=00f7ffff
+border=666666ff

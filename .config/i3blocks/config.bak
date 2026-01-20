@@ -1,0 +1,15 @@
+# Weather block
+# {{{
+[weather.t]
+command=echo "$(curl -sS 'https://wttr.in/Tokyo?format=+%t')"
+interval=300
+
+[weather.i]
+command=echo "$(curl -sS 'https://wttr.in/Tokyo?format=%c')"
+interval=300
+# }}}
+
+# Data and time
+[time]
+command=date +'%a %b %-d, %H:%M:%S'
+interval=1

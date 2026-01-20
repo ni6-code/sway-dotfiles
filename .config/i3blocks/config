@@ -1,0 +1,23 @@
+# Keymap
+[keymap]
+command=$HOME/.config/i3blocks/lang.sh
+interval=persist
+markup=pango
+
+# Battery
+[battery]
+command=$HOME/.config/i3blocks/battery.sh
+interval=10
+markup=pango
+
+# Weather ant temperature
+[weather]
+command=$HOME/.config/i3blocks/weather.sh
+interval=300
+markup=pango
+
+# Data and time
+[time]
+command=date +'%a %b %-d, %H:%M:%S'
+interval=1
+markup=pango
