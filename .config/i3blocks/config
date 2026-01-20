@@ -18,6 +18,6 @@ markup=pango
 
 # Data and time
 [time]
-command=date +'%a %b %-d, %H:%M:%S'
+command=$HOME/.config/i3blocks/calendar.sh
 interval=1
 markup=pango

@@ -59,6 +59,7 @@ seat seat0 xcursor_theme "Bibata-Modern-Classic" 20
 titlebar_padding 8 1
 for_window [app_id="foot"] title_format "Terminal"
 for_window [app_id="firefox"] title_format "Browser"
+for_window [title="i3-calendar"] floating enable, resize set 680 870
 
 font pango:JetBrainsMono Nerd Font Mono 12
 
