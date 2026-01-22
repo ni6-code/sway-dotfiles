@@ -4,6 +4,12 @@ command=$HOME/.config/i3blocks/lang.sh
 interval=persist
 markup=pango
 
+# Volume
+[volume]
+command=$HOME/.config/i3blocks/volume.sh
+interval=persist
+markup=pango
+
 # Battery
 [battery]
 command=$HOME/.config/i3blocks/battery.sh
