@@ -34,7 +34,7 @@ fi
 
 IFS=$SAVEIFS
 
-# Обработка температуры
+# Temperature processing
 temperature=$(echo "${weather[2]}" | sed -E 's/([[:digit:]]+)\.\./\1-/g' | tr -d ' ')
 
 # Choosing icon
