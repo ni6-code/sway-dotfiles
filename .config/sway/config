@@ -80,19 +80,13 @@ bar {
         statusline #ffffff
         separator  #666666
 
-        # Outline, Background, Foreground
+        # Outline Background Foreground
         focused_workspace  #666666 #666666 #ffffff
         inactive_workspace #333333 #333333 #888888
     }
 }
 
-
 ### Idle configuration
-#    swayidle -w \
-#        timeout 600 'swaylock -f -c 000000' \
-#        timeout 900 'swaymsg "output * power off"' \
-#            resume 'swaymsg "output * power on"' \
-#        before-sleep 'swaylock -f -c 000000'
 
 #
 # Inputs:
