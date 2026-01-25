@@ -12,7 +12,7 @@ exec swww img $HOME/.config/sway/wp.gif
 exec swayidle
 exec swaync
 exec foot --server
-#exec swayosd-server
+exec swayosd-server
 #exec swayidle -w timeout 1 'swaymsg "seat * hide_cursor 1000"'
 #exec swaymsg 'workspace 1; exec firefox'
 #exec_always --no-startup-id ~/.config/sway/window.py
