@@ -12,6 +12,7 @@ exec swww img $HOME/.config/sway/wp.gif
 exec swayidle
 exec swaync
 exec foot --server
+exec swayosd-server
 #exec swayidle -w timeout 1 'swaymsg "seat * hide_cursor 1000"'
 #exec swaymsg 'workspace 1; exec firefox'
 #exec_always --no-startup-id ~/.config/sway/window.py
@@ -238,13 +239,21 @@ mode "resize" {
 # Utilities:
 #
 # Special keys to adjust volume via PulseAudio
-bindsym --locked XF86AudioMute        exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioMicMute     exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+#bindsym --locked XF86AudioMute        exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+#bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+#bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+#bindsym --locked XF86AudioMicMute     exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 # Special keys to adjust brightness via brightnessctl
-bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym --locked XF86MonBrightnessUp   exec brightnessctl set 5%+
+#bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+#bindsym --locked XF86MonBrightnessUp   exec brightnessctl set 5%+
+
+bindsym XF86AudioMute exec swayosd-client --output-volume mute-toggle
+bindsym XF86AudioLowerVolume exec  swayosd-client --output-volume -10 --device alsa_output.pci-0000_11_00.4.analog-stereo.monitor
+bindsym XF86AudioRaiseVolume exec  swayosd-client --output-volume +10 --device alsa_output.pci-0000_11_00.4.analog-stereo.monitor
+bindsym XF86AudioMicMute exec swayosd-client --input-volume mute-toggle
+
+bindsym XF86MonBrightnessDown exec swayosd-client --brightness -10
+bindsym XF86MonBrightnessUp  exec swayosd-client --brightness +10
 
 #
 # Includes:
